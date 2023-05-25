@@ -16,3 +16,12 @@ function checkAccess() {
     alert("Código super secreto inválido!! Tente novamente");
   }
 }
+
+document
+  .getElementById("access-code")
+  .addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      document.getElementById("submit-button").click();
+    }
+  });
