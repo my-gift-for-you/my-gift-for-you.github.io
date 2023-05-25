@@ -11,6 +11,7 @@
     <div class="container">
       <div class="child neuromorphism">
         <input
+          id="access-code"
           placeholder="Insira o código super secreto"
           type="password"
           maxlength="4"
@@ -20,12 +21,14 @@
         <button onclick="openPopup()">dica</button>
         <div id="popup" class="popup">
           <div class="popup-content">
-            <h2>Dicas!</h2>
-            <p>Não tem dicas amor, pensa um pouquinho pfvv</p>
+            <h2>Dicas</h2>
+            <p>Não tem dicas amor, pensa um pouquinho pfv 😭😭</p>
             <button onclick="closePopup()">Fechar</button>
           </div>
         </div>
-        <div class="button-main"><button type="submit">Entrar</button></div>
+        <div class="button-main">
+          <button onclick="checkAccess()">Entrar</button>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
