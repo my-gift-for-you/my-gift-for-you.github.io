@@ -26,26 +26,32 @@ body {
   width: 50vw;
 }
 
-.text {
-  font-size: 1.25rem;
+.list {
+  font-size: 1.5rem;
   text-align: justify;
   margin: 0 auto;
-  width: 80vw;
+  padding-left: 12px;
+  padding-top: 8px;
+  width: 48vw;
+}
+
+li {
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
   .title {
     width: 75vw;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
-  .text {
+  .list {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 20px;
     width: 80vw;
-    font-size: 1.25rem;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: 0.005vw;
-    padding-bottom: 0.005vw;
   }
 }
 
