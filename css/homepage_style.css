@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: #646ba9;
+  background-image: url(https://media0.giphy.com/media/10X5oVBTgURLtC/giphy.webp?cid=ecf05e47w19tztu13h8q0d8c4dtpcl8gsp9c5iwbujbkgyd0&ep=v1_gifs_search&rid=giphy.webp&ct=g);
 }
 
 .title {
@@ -27,6 +27,7 @@ body {
 
 img {
   border: 3px solid #a9646b;
+  margin-right: 20px;
 }
 
 .image-text {
@@ -45,17 +46,22 @@ img {
 
 .claymorphism {
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50px;
   box-shadow: 0px 35px 68px 0px rgba(169, 100, 107, 0.5),
     inset 0px -5px 16px 0px rgba(169, 100, 107, 0.6),
     inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
+.fieldset {
+  border: 0;
+}
+
 /* animations */
 .text-focus-in {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
+
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);
@@ -70,7 +76,7 @@ img {
 @media (max-width: 768px) {
   .title {
     width: 75vw;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .subtitle {
@@ -80,5 +86,9 @@ img {
     padding-right: 1vw;
     padding-top: 0.005vw;
     padding-bottom: 0.005vw;
+  }
+
+  img {
+    margin-bottom: 20px;
   }
 }

@@ -11,9 +11,9 @@ function checkAccess() {
   const correctCode = "2905";
 
   if (accessCode == correctCode) {
-    window.location.href = "page.html";
+    window.location.href = "homepage.html";
   } else {
-    alert("Código super secreto inválido!! Tente novamente");
+    alert("Poxa amor é tão facinho, são só 4 dígitos!");
   }
 }
 

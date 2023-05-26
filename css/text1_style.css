@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,700&display=swap");
+
+html {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(https://media0.giphy.com/media/10X5oVBTgURLtC/giphy.webp?cid=ecf05e47w19tztu13h8q0d8c4dtpcl8gsp9c5iwbujbkgyd0&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+}
+
+.claymorphism {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  box-shadow: 0px 35px 68px 0px rgba(169, 100, 107, 0.5),
+    inset 0px -5px 16px 0px rgba(169, 100, 107, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.text {
+  font-size: 1.25rem;
+  text-align: justify;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+@media (max-width: 768px) {
+  .title {
+    width: 75vw;
+    font-size: 1.5rem;
+  }
+
+  .text {
+    width: 80vw;
+    font-size: 1.25rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.005vw;
+    padding-bottom: 0.005vw;
+  }
+}
+
+/* animations */
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
