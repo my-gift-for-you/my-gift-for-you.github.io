@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,700&display=swap");
+
+html {
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(https://media0.giphy.com/media/10X5oVBTgURLtC/giphy.webp?cid=ecf05e47w19tztu13h8q0d8c4dtpcl8gsp9c5iwbujbkgyd0&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+}
+
+.claymorphism {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  box-shadow: 0px 35px 68px 0px rgba(169, 100, 107, 0.5),
+    inset 0px -5px 16px 0px rgba(169, 100, 107, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 25.5px;
+  margin: 0 auto;
+  width: 50vw;
+  text-align: center;
+}
+
+.text {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: justify;
+  padding-top: 8px;
+  padding-left: 32px;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-family: "Roboto Mono", monospace;
+}
+
+@media (max-width: 768px) {
+  .title {
+    width: 80vw;
+    font-size: 17.5px;
+  }
+
+  .text {
+    font-size: 16px;
+    text-align: justify;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 80vw;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.dias {
+  color: purple;
+}
+
+.hours {
+  color: blue;
+}
+
+.minutes {
+  color: green;
+}
+
+.seconds {
+  color: red;
+}
