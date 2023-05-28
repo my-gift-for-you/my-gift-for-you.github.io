@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,700&display=swap");
+
+html {
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(https://media0.giphy.com/media/10X5oVBTgURLtC/giphy.webp?cid=ecf05e47w19tztu13h8q0d8c4dtpcl8gsp9c5iwbujbkgyd0&ep=v1_gifs_search&rid=giphy.webp&ct=g);
+}
+
+.claymorphism {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  box-shadow: 0px 35px 68px 0px rgba(169, 100, 107, 0.5),
+    inset 0px -5px 16px 0px rgba(169, 100, 107, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.claymorphism > img {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 35px 68px 0px rgba(169, 100, 107, 0.5),
+    inset 0px -5px 16px 0px rgba(169, 100, 107, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 25.5px;
+  padding-top: 0;
+  margin: 0 auto;
+  width: 50vw;
+  text-align: center;
+}
+
+.text {
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: justify;
+  padding-top: 8px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+  padding-right: 40px;
+}
+
+.final {
+  font-family: "Roboto Mono", monospace;
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+  padding-right: 32px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+p.indent {
+  text-indent: 24px;
+}
+
+img {
+  width: 30%;
+}
+
+.text > img {
+  width: 16.104%;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 55%;
+  }
+
+  img:first-of-type {
+    margin-top: 12px;
+  }
+
+  .text > img {
+    width: 100px;
+    height: 133px;
+  }
+
+  .title {
+    width: 80vw;
+    font-size: 18px;
+  }
+
+  .text {
+    width: 80vw;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .final {
+    width: 80vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
