@@ -28,16 +28,19 @@ document
 
 function countDays() {
   const startDate = new Date("2022-05-29");
-  let nowDate = new Date();
-
-  let diff = nowDate.getTime() - startDate.getTime();
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor(diff / (1000 * 60 * 60));
-  let minutes = Math.floor(diff / (1000 * 60));
-  let seconds = Math.floor(diff / 1000);
+  const nowDate = new Date();
+  const diff = nowDate.getTime() - startDate.getTime();
+  const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const daysReal = days >= 365 ? days - 365 : days;
+  const hours = nowDate.getHours();
+  const minutes = nowDate.getMinutes();
+  const seconds = nowDate.getSeconds();
   document.getElementById("counter").innerHTML =
-    "Passaram-se <span class='dias'>" +
-    days +
+    "Passaram-se <span class='years'>" +
+    years +
+    " anos </span><span class='days'>" +
+    daysReal +
     " dias</span>, <span class='hours'>" +
     hours +
     " horas</span>, <span class='minutes'>" +
